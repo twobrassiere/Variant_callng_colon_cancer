@@ -10,14 +10,30 @@ This code of review by [variant calling pipeline using GATK4 and nextflow](https
 6. [GATK](https://github.com/broadinstitute/gatk/releases)(=4.2.3) package variant call .
 
 ## Part 1: Download whole exome sequencing for metastatic colorectal cancer(PRJNA726023) and trimmed by fold of [Jupyter notebook](https://github.com/twobrassiere/Variant_callng_colon_cancer/tree/main/Jupyter%20notebook) 
-   Step 1 : Download accession list by [SRA run selector](https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=5&WebEnv=MCID_63a51fbfe936a5469741cbf0&o=acc_s%3Aa) 
-   
-   Step 2 : Automatically download sequencing code by [Automatic download sequence by sra toolkit.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Automatic%20download%20sequence%20by%20sra%20toolkit.ipynb)
-   
-   Step 3 : Search adapter by [Illumina Adapter Sequences](https://support-docs.illumina.com/SHARE/AdapterSeq/illumina-adapter-sequences.pdf)
-   
-   Step 4 : Automatically trimmed wxs sequence data by [Use pair-end sequnce triming by cutapat.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Use%20pair-end%20sequnce%20%20triming%20by%20cutapat.ipynb)
+Step 1 : Download accession list by [SRA run selector](https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=5&WebEnv=MCID_63a51fbfe936a5469741cbf0&o=acc_s%3Aa) 
+Step 2 : Automatically download sequencing code by [Automatic download sequence by sra toolkit.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Automatic%20download%20sequence%20by%20sra%20toolkit.ipynb)
+Step 3 : Search adapter by [Illumina Adapter Sequences](https://support-docs.illumina.com/SHARE/AdapterSeq/illumina-adapter-sequences.pdf)
+Step 4 : Automatically trimmed wxs sequence data by [Use pair-end sequnce triming by cutapat.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Use%20pair-end%20sequnce%20%20triming%20by%20cutapat.ipynb)
    
 ## We bulid workflow of  variant calling pipeline using nextflow![iamge](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/workflow.jpg)
 
-## Part 1: Download whole exome sequencing for metastatic colorectal cancer(PRJNA726023) and trimmed by fold of [Jupyter notebook]
+## Part 2 : variant calling using nexflow
+```sh
+ $ ./nextflow run main.nf --help
+=========================================
+neoflow => WXS anylsis
+=========================================
+Usage:
+nextflow run main.nf
+Arguments:
+  --reads                     Reads data in fastq.gz or fastq format. For example, "*_{1,2}.fastq.gz"
+  --ref_dir                   HLA reference folder
+  --seqtype                   Read type, dna or rna. Default is dna.
+  --singleEnd                 Single end or not, default is false (pair end reads)
+  --cpu                       The number of CPUs, default is 4.
+  --vcf_dir                   Folder of variant file , default is "./"
+  --help                      Print help message
+ ```
+
+
+   
