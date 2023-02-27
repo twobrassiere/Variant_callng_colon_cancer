@@ -68,3 +68,5 @@ module load  biology/GATK/4.2.3.0
  --vcf_dir ./vcf 
  --cpu 14
  ```
+# Acknowledgements 
+We appreciate Taiwania 3 by TWCC to variant call of colon cancer 
