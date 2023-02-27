@@ -9,7 +9,7 @@ This code of review by [variant calling pipeline using GATK4 and nextflow](https
 5. [Nextflow](https://www.nextflow.io/docs/latest/getstarted.html) automatically  bulid sequence anaylsis pipeline .
 6. [GATK](https://github.com/broadinstitute/gatk/releases)(=4.2.3) package variant call .
 
-# Part 1: Download whole exome sequencing for metastatic colorectal cancer(PRJNA726023) and trimmed by fold of [Jupyter notebook](https://github.com/twobrassiere/Automatically-analysis-whole-exome-sequencing-of-colon-cancer-dataset/tree/main/Jupyter%20notebook) .
+# Part 1: Download whole exome sequencing for metastatic colorectal cancer(PRJNA726023) and trimmed by fold of [Jupyter notebook](https://github.com/twobrassiere/Variant_callng_colon_cancer/tree/main/Jupyter%20notebook) 
    Step 1 : Download accession list by [SRA run selector](https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=5&WebEnv=MCID_63a51fbfe936a5469741cbf0&o=acc_s%3Aa) 
    
    Step 2 : Automatically download sequencing code by [Automatic download sequence by sra toolkit.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Automatic%20download%20sequence%20by%20sra%20toolkit.ipynb)
@@ -20,3 +20,4 @@ This code of review by [variant calling pipeline using GATK4 and nextflow](https
    
 ## We bulid workflow of  variant calling pipeline using nextflow![iamge](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/workflow.jpg)
 
+# Part 1: Download whole exome sequencing for metastatic colorectal cancer(PRJNA726023) and trimmed by fold of [Jupyter notebook]
