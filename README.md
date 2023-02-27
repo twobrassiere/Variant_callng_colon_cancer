@@ -45,7 +45,7 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
  --cpu 14
 ```
 
-#### Example by Taiwania 3
+#### Example by Taiwania 3(HPC)
 ```sh
 #!/usr/bin/sh
 #SBATCH -A MST109178        # Account name/project number
