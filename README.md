@@ -58,12 +58,13 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
 #SBATCH --mail-user=elephantliu@nycu.edu.tw    # email
 #SBATCH --mail-type=BEGIN,END              # 指定送出email時機 可為NONE, BEGIN, END, FAIL, REQUEUE, ALL
 
-
-
 module load  biology/Samtools/1.15.1
 module load  biology/OpenJDK/17.0.2+8
 module load biology/BWA/0.7.17
 module load  biology/GATK/4.2.3.0
-
- ./nextflow run  ./neoflow_vcf.nf --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" --ref_dir ./  --vcf_dir ./vcf --cpu 14
+ ./nextflow run main.nf 
+ --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \
+ --ref_dir ./reference/GRCh37 \
+ --vcf_dir ./vcf 
+ --cpu 14
  ```
