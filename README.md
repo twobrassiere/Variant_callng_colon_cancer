@@ -30,7 +30,7 @@ Usage:
 nextflow run main.nf
 Arguments:
   --reads                     Reads data in fastq.gz or fastq format. For example, "*_{1,2}.fastq.gz"
-  --ref_dir                   HLA reference folder
+  --ref_dir                   Reference  sequence folder
   --seqtype                   Read type, dna or rna. Default is dna.
   --singleEnd                 Single end or not, default is false (pair end reads)
   --cpu                       The number of CPUs, default is 4.
