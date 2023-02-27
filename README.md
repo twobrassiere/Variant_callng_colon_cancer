@@ -44,3 +44,26 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
  --vcf_dir ./vcf \
  --cpu 14
 ```
+
+#### Example by Taiwania 3
+```sh
+#!/usr/bin/sh
+#SBATCH -A MST109178        # Account name/project number
+#SBATCH -J Job_name         # Job name
+#SBATCH -p ngs186G        # Partition Name 等同PBS裡面的 -q Queue name
+#SBATCH -c 28              # 使用的數 請參考Queue資源設定
+#SBATCH --mem=186g           # 使用的記憶體量 請參考Queue資源設定
+#SBATCH -o out.log          # Path to the standard output file
+#SBATCH -e err.log          # Path to the standard error ouput file
+#SBATCH --mail-user=elephantliu@nycu.edu.tw    # email
+#SBATCH --mail-type=BEGIN,END              # 指定送出email時機 可為NONE, BEGIN, END, FAIL, REQUEUE, ALL
+
+
+
+module load  biology/Samtools/1.15.1
+module load  biology/OpenJDK/17.0.2+8
+module load biology/BWA/0.7.17
+module load  biology/GATK/4.2.3.0
+
+ ./nextflow run  ./neoflow_vcf.nf --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" --ref_dir ./  --vcf_dir ./vcf --cpu 14
+ ```
