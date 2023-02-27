@@ -38,7 +38,7 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
    
 #### Example by servse
 ```sh
- ./nextflow run  ./neoflow_vcf.nf 
+ ./nextflow run  main.nf
  --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \ 
  --ref_dir ./reference/GRCh37 \
  --vcf_dir ./vcf \
