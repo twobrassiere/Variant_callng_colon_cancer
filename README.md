@@ -40,7 +40,7 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
 ```sh
  ./nextflow run  main.nf
  --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \ 
- --ref_dir ./reference/GRCh37 \
+ --ref_dir ./reference_genome/GRCh37 \
  --vcf_dir ./vcf \
  --cpu 14
 ```
@@ -64,7 +64,7 @@ module load biology/BWA/0.7.17
 module load  biology/GATK/4.2.3.0
  ./nextflow run main.nf 
  --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \
- --ref_dir ./reference/GRCh37 \
+ --ref_dir ./reference_genome/GRCh37 \
  --vcf_dir ./vcf 
  --cpu 14
  ```
