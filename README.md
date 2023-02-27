@@ -41,6 +41,6 @@ The  output of `main.nf` is a txt format file containing vcf  for a sample and z
  ./nextflow run  ./neoflow_vcf.nf 
  --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \ 
  --ref_dir ./reference/GRCh37 \
- --vcf_dir ./vcf 
+ --vcf_dir ./vcf \
  --cpu 14
 ```
