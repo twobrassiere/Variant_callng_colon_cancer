@@ -19,5 +19,5 @@ This code of review by [variant calling pipeline using GATK4 and nextflow](https
    
    Step 4 : Automatically trimmed wxs sequence data by [Use pair-end sequnce triming by cutapat.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Use%20pair-end%20sequnce%20%20triming%20by%20cutapat.ipynb)
    
-## We bulid workflow of  variant calling pipeline using nextflow
+## We bulid workflow of  variant calling pipeline using nextflow![iamge](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/workflow.jpg)
 
