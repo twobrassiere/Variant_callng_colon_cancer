@@ -14,6 +14,7 @@ This code of review by [variant calling pipeline using GATK4 and nextflow](https
    
    Step 2 : Automatically download sequencing code by [Automatic download sequence by sra toolkit.ipynb]
 (https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Automatic%20download%20sequence%20by%20sra%20toolkit.ipynb)
+   
    Step 3 : Search adapter by [Illumina Adapter Sequences](https://support-docs.illumina.com/SHARE/AdapterSeq/illumina-adapter-sequences.pdf)
    
    Step 4 : Automatically trimmed wxs sequence data by [Use pair-end sequnce triming by cutapat.ipynb](https://github.com/twobrassiere/Variant_callng_colon_cancer/blob/main/Jupyter%20notebook/Use%20pair-end%20sequnce%20%20triming%20by%20cutapat.ipynb)
