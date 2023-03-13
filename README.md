@@ -69,7 +69,8 @@ module load  biology/GATK/4.2.3.0
  --reads "./fastq_trimmed/SRR14463457_pass_{1,2}_trimmed.fastq.gz" \
  --ref_dir ./reference_genome/GRCh37 \
  --vcf_dir ./vcf \
- --cpu 14
+ --cpu 28
  ```
+
 # Acknowledgements 
 We appreciate Taiwania 3 by TWCC to variant call of colon cancer 
